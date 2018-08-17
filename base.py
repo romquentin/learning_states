@@ -39,3 +39,27 @@ def create_bem_surf(subject, subjects_dir=None, overwrite=False):  # from jr.meg
         write_bem_surfaces(fname=bem_fname, surfs=surfs)
         bem = make_bem_solution(surfs)
         write_bem_solution(fname=bem_sol_fname, bem=bem)
+
+
+def read_hpi_mri(fname):
+    landmark = dict()
+    f = open(fname)
+    text = [l.strip('\n') for l in f.readlines()]
+    f.close()
+    idx = 0
+    while idx < len(text):
+        line = text[idx]
+        if line[:4] in ('NEC\t', 'LEC\t', 'REC\t'):
+            code, _, _, x, y, z = line.split('\t')[:6]
+            landmark[code] = [float(x), float(y), float(z)]
+        if line[:5] in 'le\tSe':
+            _, _, x, y, z = line.split('\t')[:5]
+            landmark['lpa'] = [float(x), float(y), float(z)]
+        elif line[:5] in 're\tSe':
+            _, _, x, y, z = line.split('\t')[:5]
+            landmark['rpa'] = [float(x), float(y), float(z)]
+        elif line[:5] in 'rn\tSe':
+            _, _, x, y, z = line.split('\t')[:5]
+            landmark['nasion'] = [float(x), float(y), float(z)]
+        idx += 1
+    return landmark
