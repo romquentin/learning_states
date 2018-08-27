@@ -3,9 +3,8 @@ import os.path as op
 from nose.tools import assert_true
 
 
-def create_bem_surf(subject, subjects_dir=None, overwrite=False):  # from jr.meg # noqa
+def create_bem_surf(subject, subjects_dir=None, overwrite=False):
     from mne.bem import make_watershed_bem
-
     # Set file name ----------------------------------------------------------
     bem_dir = op.join(subjects_dir, subject, 'bem')
     src_fname = op.join(bem_dir, subject + '-oct-6-src.fif')
