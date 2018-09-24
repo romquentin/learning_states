@@ -1,0 +1,15 @@
+export SUBJECTS_DIR=/data/HCPS_MEG/data/freesurf_subjects ; recon-all -all -subjid GXWWVBYG -i /data/HCPS_MEG/data/BrainSight/GXWWVBYG/T1_align.nii.gz -openmp 8
+export SUBJECTS_DIR=/data/HCPS_MEG/data/freesurf_subjects ; recon-all -all -subjid IYXDUENZ -i /data/HCPS_MEG/data/BrainSight/IYXDUENZ/T1_align.nii.gz -openmp 8
+export SUBJECTS_DIR=/data/HCPS_MEG/data/freesurf_subjects ; recon-all -all -subjid KIYHCRAK -i /data/HCPS_MEG/data/BrainSight/KIYHCRAK/T1_align.nii.gz -openmp 8
+export SUBJECTS_DIR=/data/HCPS_MEG/data/freesurf_subjects ; recon-all -all -subjid NHRRSYHC -i /data/HCPS_MEG/data/BrainSight/NHRRSYHC/T1_align.nii.gz -openmp 8
+export SUBJECTS_DIR=/data/HCPS_MEG/data/freesurf_subjects ; recon-all -all -subjid NJCOADSS -i /data/HCPS_MEG/data/BrainSight/NJCOADSS/T1_align.nii.gz -openmp 8
+export SUBJECTS_DIR=/data/HCPS_MEG/data/freesurf_subjects ; recon-all -all -subjid PZSRMXQT -i /data/HCPS_MEG/data/BrainSight/PZSRMXQT/T1_align.nii.gz -openmp 8
+export SUBJECTS_DIR=/data/HCPS_MEG/data/freesurf_subjects ; recon-all -all -subjid RKYXMQZH -i /data/HCPS_MEG/data/BrainSight/RKYXMQZH/T1_align.nii.gz -openmp 8
+export SUBJECTS_DIR=/data/HCPS_MEG/data/freesurf_subjects ; recon-all -all -subjid RNWLIWSH -i /data/HCPS_MEG/data/BrainSight/RNWLIWSH/T1_align.nii.gz -openmp 8
+export SUBJECTS_DIR=/data/HCPS_MEG/data/freesurf_subjects ; recon-all -all -subjid SQWNDFWL -i /data/HCPS_MEG/data/BrainSight/SQWNDFWL/T1_align.nii.gz -openmp 8
+export SUBJECTS_DIR=/data/HCPS_MEG/data/freesurf_subjects ; recon-all -all -subjid XATEOUZW -i /data/HCPS_MEG/data/BrainSight/XATEOUZW/T1_align.nii.gz -openmp 8
+export SUBJECTS_DIR=/data/HCPS_MEG/data/freesurf_subjects ; recon-all -all -subjid XBRLXBYD -i /data/HCPS_MEG/data/BrainSight/XBRLXBYD/T1_align.nii.gz -openmp 8
+export SUBJECTS_DIR=/data/HCPS_MEG/data/freesurf_subjects ; recon-all -all -subjid XIAUIUMO -i /data/HCPS_MEG/data/BrainSight/XIAUIUMO/T1_align.nii.gz -openmp 8
+export SUBJECTS_DIR=/data/HCPS_MEG/data/freesurf_subjects ; recon-all -all -subjid YFAALKWR -i /data/HCPS_MEG/data/BrainSight/YFAALKWR/T1_align.nii.gz -openmp 8
+export SUBJECTS_DIR=/data/HCPS_MEG/data/freesurf_subjects ; recon-all -all -subjid ZAEWEXFK -i /data/HCPS_MEG/data/BrainSight/ZAEWEXFK/T1_align.nii.gz -openmp 8
+export SUBJECTS_DIR=/data/HCPS_MEG/data/freesurf_subjects ; recon-all -all -subjid ZKJAUKZL -i /data/HCPS_MEG/data/BrainSight/ZKJAUKZL/T1_align.nii.gz -openmp 8

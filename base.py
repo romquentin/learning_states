@@ -15,7 +15,7 @@ def create_bem_surf(subject, subjects_dir=None, overwrite=False):
     if overwrite or not op.isfile(op.join(bem_dir, subject + '-head.fif')):
         make_watershed_bem(subject=subject, subjects_dir=subjects_dir,
                            overwrite=True, volume='T1', atlas=False,
-                           gcaatlas=False, preflood=None, show=True)
+                           gcaatlas=False, preflood=None, show=False)
     # Setup source space
     if overwrite or not op.isfile(src_fname):
         from mne import setup_source_space
@@ -48,7 +48,7 @@ def read_hpi_mri(fname):
     idx = 0
     while idx < len(text):
         line = text[idx]
-        if line[:4] in ('NEC\t', 'LEC\t', 'REC\t'):
+        if line[:4] in ('NAC\t', 'LEC\t', 'REC\t'):
             code, _, _, x, y, z = line.split('\t')[:6]
             landmark[code] = [float(x), float(y), float(z)]
         if line[:5] in 'le\tSe':
